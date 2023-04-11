@@ -1,6 +1,7 @@
 import { Tab, TabList, TabPanel, TabPanels, Tabs } from "@chakra-ui/react";
 import { BasicTab } from "./tabs/BasicTab";
 import { DraggableTab } from "./tabs/DraggableTab";
+import { RestrictToWindowEdgeTab } from "./tabs/RestrictToWindowEdgeTab";
 
 const App = () => {
   return (
@@ -8,6 +9,7 @@ const App = () => {
       <TabList>
         <Tab>Basic</Tab>
         <Tab>Draggable</Tab>
+        <Tab>RestrictToWindowEdge</Tab>
       </TabList>
 
       <TabPanels>
@@ -16,6 +18,9 @@ const App = () => {
         </TabPanel>
         <TabPanel>
           <DraggableTab />
+        </TabPanel>
+        <TabPanel>
+          <RestrictToWindowEdgeTab />
         </TabPanel>
       </TabPanels>
     </Tabs>
